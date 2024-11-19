@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  background-color: #005695;
+  padding: 0 50px 0 50px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sectionIcons {
+  display: flex;
+  justify-content: space-around;
+  width: 18vw;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: #232020;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (max-width:1148px) {
+  .sectionIcons {
+    width: 25vw;
+  }
+}
+
+@media (max-width:746px) {
+  .sectionIcons {
+    width: 37vw;
+  }
+}
+
+@media (max-width:534px) {
+  .footerTop {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sectionIcons img {
+    width: 22px;
+    height: 22px;
+  }
+  .footerBottom {
+    font-size: 12px;
+  }
+  
+}
