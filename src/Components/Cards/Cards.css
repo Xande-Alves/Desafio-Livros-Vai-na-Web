@@ -7,7 +7,7 @@
 }
 
 .sectionTextCards {
-  height: 90vh;
+  margin-bottom: 150px;
 }
 
 .sectionTextCards h1 {
@@ -74,7 +74,7 @@
     height: 200px;
   }
   .sectionTextCards {
-    height: 140vh;
+    margin-bottom: 50px;
   }
   .sectionTextCards h1 {
     text-align: center;
