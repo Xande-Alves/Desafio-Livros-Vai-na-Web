@@ -1,20 +1,33 @@
-import './QueroDoar.css';
+import s from './queroDoar.module.scss';
+import frame from '../../assets/Frame.png';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
-import InfoDoar from '../../Components/InfoDoar/InfoDoar';
 
 export default function QueroDoar() {
   return (
     <>
       <Header />
-      <section className='sectionQueroDoar'>
-        <p className="paragrafoDoar">
-          Por favor, preencha o formulário com suas informações e as informações
-          do Livro
-        </p>
-        <InfoDoar />
-      </section>
-
+      <main>
+        <section className={s.sectionQueroDoar}>
+          <p>
+            Por favor, preencha o formulário com suas informações e as
+            informações do Livro
+          </p>
+          <section className={s.sectionForm}>
+            <section className={s.sectionFrameText}>
+              <img src={frame} alt="Figura de um livro aberto." />
+              <h2>Informações do Livro</h2>
+            </section>
+            <section className={s.sectionInputDoar}>
+              <input type="text" placeholder="Título" />
+              <input type="text" placeholder="Categoria" />
+              <input type="text" placeholder="Autor" />
+              <input type="text" placeholder="Link da Imagem" />
+            </section>
+            <button>Doar</button>
+          </section>
+        </section>
+      </main>
       <Footer />
     </>
   );
