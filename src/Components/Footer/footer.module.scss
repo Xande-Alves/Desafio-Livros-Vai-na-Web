@@ -32,13 +32,13 @@
 }
 
 @media (max-width: 1148px) {
-  .sectionIcons {
+  .navIcons {
     width: 25vw;
   }
 }
 
 @media (max-width: 746px) {
-  .sectionIcons {
+  .navIcons {
     width: 37vw;
   }
 }
@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: space-around;
   }
-  .sectionIcons img {
+  .navIcons img {
     width: 22px;
     height: 22px;
   }
