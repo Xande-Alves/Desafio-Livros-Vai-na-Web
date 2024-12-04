@@ -5,7 +5,7 @@ import Header from '../../Components/Header/Header';
 
 export default function QueroDoar() { 
   return (
-    <section>
+    <>
       <Header />
       <section className={s.sectionQueroDoar}>
         <p>
@@ -27,6 +27,6 @@ export default function QueroDoar() {
         </section>
       </section>
       <Footer />
-    </section>
+    </>
   );
 }
