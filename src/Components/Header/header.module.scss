@@ -20,6 +20,10 @@
     font-weight: 400;
   }
 
+  li {
+    transition: font-size 0.3s ease;
+  }
+
   li:hover {
     font-size: 22px;
   }
