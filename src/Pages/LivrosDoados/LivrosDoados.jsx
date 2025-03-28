@@ -3,6 +3,7 @@ import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import ComponentLivroDoado from '../../Components/ComponentLivroDoado/ComponentLivroDoado';
 
+
 export default function LivrosDoados() {
   return (
     <>
