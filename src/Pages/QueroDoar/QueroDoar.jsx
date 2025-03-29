@@ -37,6 +37,12 @@ export default function QueroDoar() {
     try {
       const resposta = await axios.post(endPointAPI, dadosAEnviar);
       alert("Livro cadastrado com sucesso!");
+
+      // Limpa os campos após o envio bem-sucedido
+      setTitulo("")
+      setCategoria("")
+      setAutor("")
+      setImagem_url("")
     } catch (erro) {
       console.error("Erro ao cadastrar livro:", erro);
       alert("Erro ao cadastrar livro. Verifique os dados e tente novamente.");
@@ -61,17 +67,20 @@ export default function QueroDoar() {
               <input
                 type="text"
                 placeholder="Título"
+                value={titulo}
                 onChange={capturarTitulo}
               />
               <input
                 type="text"
                 placeholder="Categoria"
+                value={categoria}
                 onChange={capturarCategoria}
               />
-              <input type="text" placeholder="Autor" onChange={capturarAutor} />
+              <input type="text" placeholder="Autor" value={autor} onChange={capturarAutor} />
               <input
                 type="text"
                 placeholder="Link da Imagem"
+                value={imagem_url}
                 onChange={capturarImagemURL}
               />
               {/* <button onClick={enviarDados}>Doar</button> */}
