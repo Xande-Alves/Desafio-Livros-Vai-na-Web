@@ -90,29 +90,48 @@
   }
 }
 
-@media (max-width: 1182px) {
-  .searchSection {
-    display: none;
-  }
-  .headerContent nav {
-    width: 70%;
-    margin-right: 20px;
+@media (max-width: 800px) {
+  .headerContent {
+    display: flex;
+    flex-direction: column;
+
+    .logoTitulo {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    nav {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    .searchSection {
+      width: 80%;
+      margin-bottom: 10px;
+    }
   }
 }
 
-@media (max-width: 707px) {
+@media (max-width: 500px) {
   .headerContent {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    .logoTitulo {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
 
     nav {
       width: 90%;
-      justify-content: space-around;
-      margin-top: 15px;
+      margin-bottom: 10px;
     }
-  }
-  .logo-titulo {
-    margin-bottom: 20px;
-    font-size: 22px;
+
+    .searchSection {
+      width: 90%;
+      margin-bottom: 10px;
+    }
   }
 }
