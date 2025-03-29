@@ -1,9 +1,12 @@
-import s from './header.module.scss';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
-import lupa from '../../assets/lupa.png';
+import s from "./header.module.scss";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import lupa from "../../assets/lupa.png";
+import { useSearch } from "../../contexts/SearchContext";
 
 export default function Header() {
+  const { setTermoPesquisa } = useSearch(); // Pegando o setter do contexto
+
   return (
     <section className={s.headerContent}>
       <section className={s.logoTitulo}>
@@ -28,7 +31,12 @@ export default function Header() {
         </ul>
       </nav>
       <section className={s.searchSection}>
-        <input type="search" name="" id="" placeholder="O que você procura?" />
+        <input
+          type="search"
+          id=""
+          placeholder="O que você procura?"
+          onChange={(e) => setTermoPesquisa(e.target.value)}
+        />
         <Link to="/Pesquisa">
           <img src={lupa} alt="imagem de lupa que simboliza procura" />
         </Link>
