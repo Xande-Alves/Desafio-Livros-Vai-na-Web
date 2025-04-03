@@ -63,7 +63,7 @@ export default function QueroDoar() {
             <h2>Informações do Livro</h2>
           </section>
           <section className={s.sectionInputDoar}>
-            {/* <form onSubmit={(e) => e.preventDefault()}> */}
+            <form onSubmit={(e) => e.preventDefault()}>
               <input
                 type="text"
                 placeholder="Título"
@@ -83,8 +83,7 @@ export default function QueroDoar() {
                 value={imagem_url}
                 onChange={capturarImagemURL}
               />
-              {/* <button onClick={enviarDados}>Doar</button> */}
-            {/* </form> */}
+            </form>
           </section>
           <button onClick={enviarDados}>Doar</button>
         </section>
